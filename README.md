@@ -1,2 +1,2 @@
 # arnow.solutions
-Simplicity is king :-)
+Simplicity is king
