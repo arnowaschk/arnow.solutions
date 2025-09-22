@@ -12,19 +12,19 @@
 		content="developer german python go rust java data analytics machine learning llm ai" />
 	<style>
 		html {
-			height: 100%;
+			height: 150vw;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
 			background-repeat: no-repeat;
-			background: -moz-linear-gradient(20deg, rgba(95, 60, 240, 1) 0%, rgba(6, 11, 54, 51) 100%);
-			background: -webkit-linear-gradient(20deg, rgba(95, 60, 240, 1) 0%, rgba(6, 11, 54, 51) 100%);
-			background: linear-gradient(20deg, rgba(95, 60, 240, 1) 0%, rgba(6, 11, 54, 51) 100%);
+			background: -moz-linear-gradient(20deg, rgba(90, 60, 240, 1) 0%, rgba(6, 11, 54, 51) 100%);
+			background: -webkit-linear-gradient(20deg, rgba(90, 60, 240, 1) 0%, rgba(6, 11, 54, 51) 100%);
+			background: linear-gradient(20deg, rgba(90, 60, 240, 1) 0%, rgba(6, 11, 54, 51) 100%);
 			color: #d0d0d0;
 			text-align: center;
 			font-weight: 100;
-			font-size: 5vw;
+			font-size: 1vw;
 		}
 
 		body {
@@ -32,31 +32,32 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 150vh;
         }
         .social-icons {
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 3vw;
         }
         .social-icons a {
             text-decoration: none;
         }
         .social-icons img {
-			width: clamp(36px, 10vw, 150px);
+			width: clamp(2px, 10vw, 250px);
   			aspect-ratio: 1 / 1;
   			height: auto;            /* für <img> */
   			object-fit: contain; 
 			filter: invert(1);
         }
 
+		.social-icons p {margin-top: 0vh;font-size: 0.5rem;}
 		* {
 			padding: 0;
 			margin: 0;
 		}
 
 		h1 {
-			font-size: 10vw;
+			font-size: 10rem;
 			font-weight: 700;
 			color: #fff;
 		}
@@ -64,14 +65,18 @@
 		div {
 			position: absolute;
 			width: 100%;
-			top: 39%;
+			top: 28%;
 			-ms-transform: translateY(-50%);
 			-webkit-transform: translate(0, -50%);
 			transform: translate(0, -50%);
 		}
 
 		p {
-			margin-top: 4vh;
+			margin-top: 3vh;
+			margin-block-start: 0.5rem;
+			margin-block-end: 3.5rem;
+			font-weight: 400;
+			font-size: 3rem;
 		}
 
 		a,
@@ -79,11 +84,11 @@
 		a:active {
 			color: #fff;
 			text-decoration: none;
-			font-size: 20vmin;
+			font-size: 3vm;
 		}
 
 		a:hover {
-			color: #000;
+			color: #fff;
 		}
 	</style>
 </head>
@@ -101,7 +106,66 @@
 				</a>
 				<a href="mailto:arno@arnow.solutions">
 					<img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/minutemailer.svg" alt="E-Mail">
-				</p></div>
+				</a>
+		</p>
+		<!--<p>TEST</p>-->
+
+		<div class="wrap">
+			<style>
+				.wrap{min-height:0vh;background: rgba(0,0,0,0.1);position: static;justify-content: center;width: 100vw}
+				.container{max-width:85vw;margin:0 auto;padding:4vw 4vw;justify-content: center;width: 85vw}
+				.panel{background:rgba(225,255,255,0.1);border-radius:2vw;box-shadow:0 1vw 3vw rgba(0,0,0,0.15);padding:3vw;top:35vw;width: 74vw;margin-left: 3vw; margin-right: 3vw; justify-content: center;}
+				.wrap h1{font-size:1.8rem;line-height:1.2}
+				.wrap p{margin:0 0 1vw 0;font-size: 1.5rem;}
+				.cta{font-size:2rem;display:inline-block;margin-top:1vw;padding:1vw 2vw;border-radius:1.5vw;background: rgba(0,0,50,0.5);color: rgba(225,225,255,0.9);text-decoration:none;font-weight:700}
+				.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(5vw,22vw));gap:4vw;margin-top:22vw}
+				.card{background:rgba(225,255,255,0.2);border-radius:2vw;padding:2vw;box-shadow:0 1vw 2vw rgba(0,0,0,0.18)}
+				.card h3{margin:0 0 1vw 0;font-size:1rem}
+				.muted{font-size:0.10rem;color: #fff;}
+				.trust{margin-top:18px;font-size:1rem}
+				footer{margin-top:24px;font-size:1rem;color:#e5e7eb}
+				footer a{color:#e5e7eb;font-size:1rem;}
+			  </style>
+			<div class="container">
+			  <div class="panel">
+				<header style="text-align:center;margin-bottom:18px">
+				  <h1>Python, Daten & Docker – Projekte in Tagen statt Wochen.</h1>
+				  <p><br>Ich baue CSV‑zu‑API‑Services, starte lokales RAG und mache Python‑Code produktionsreif – schnell, dokumentiert, dockerisiert.</p>
+				  <a class="cta" href="mailto:arno@arnow.solutions">20‑Minuten‑Gespräch vereinbaren</a>
+				</header>
+		
+				<section aria-label="Offers">
+				  <div class="grid">
+					<article class="card">
+					  <h3>CSV‑to‑API in 1 Tag</h3>
+					  <p>Upload, Query, Export. FastAPI + Docker. Hand‑over inklusive.</p>
+					  <p class="muted"><strong>Fixpreis ab 590 €</strong></p>
+					</article>
+					<article class="card">
+					  <h3>RAG‑Starter (lokal)</h3>
+					  <p>PDFs → Antworten mit Quellen. Mistral 7B (gguf), Embeddings, Vektor‑DB – komplett lokal.</p>
+					  <p class="muted"><strong>Fixpreis ab 1.200 €</strong></p>
+					</article>
+					<article class="card">
+					  <h3>Python → Produktion</h3>
+					  <p>Vom Notebook/Script zum deploybaren Service: Logging, Config, Docker, CI‑Stub.</p>
+					  <p class="muted"><strong>Fixpreis ab 650 €</strong></p>
+					</article>
+				  </div>
+				</section>
+		
+				<section class="trust" aria-label="Trust">
+				  <p><strong>Erfahrung:</strong> ML‑Prognosen (LightGBM) im produktiven Einsatz über mehrere Jahre, RTX 4060 Ti für lokale KI‑Stacks, Udacity Nanodegrees (Data Analysis & Data Science).</p>
+				</section>
+		
+				<footer>
+				  <p style="margin-top: 30vw;">© 2025 Arno Waschk · <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a></p>
+				</footer>
+			  </div>
+			</div>
+		  </div>
+		
+		  </p>
 	</div>
 
 </html>
