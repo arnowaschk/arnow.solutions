@@ -43,8 +43,10 @@
             text-decoration: none;
         }
         .social-icons img {
-            width: 150px; 
-            height: 150px;
+			width: clamp(36px, 10vw, 150px);
+  			aspect-ratio: 1 / 1;
+  			height: auto;            /* für <img> */
+  			object-fit: contain; 
 			filter: invert(1);
         }
 
