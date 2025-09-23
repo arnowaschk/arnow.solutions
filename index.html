@@ -78,7 +78,7 @@
             text-decoration: none;
         }
         .social-icons img {
-			width: clamp(2px, 10vw, 250px);
+			width: clamp(2px, 7vw, 250px);
   			aspect-ratio: 1 / 1;
   			height: auto;            /* für <img> */
   			object-fit: contain; 
@@ -149,52 +149,58 @@
 			<style>
 				.wrap{min-height:0vh;background: rgba(0,0,0,0.1);position: static;justify-content: center;width: 100vw}
 				.container{max-width:85vw;margin:0 auto;padding:4vw 4vw;justify-content: center;width: 85vw}
-				.panel{background:rgba(225,255,255,0.1);border-radius:2vw;box-shadow:0 1vw 3vw rgba(0,0,0,0.15);padding:3vw;top:35vw;width: 77vw;margin-left: 3vw; margin-right: 3vw; justify-content: center;}
+				.panel{background:rgba(225,255,255,0.1);border-radius:2vw;box-shadow:0 1vw 3vw rgba(0,0,0,0.15);padding:3vw;top:37vw;width: 79vw;margin-left: 3vw; margin-right: 3vw; justify-content: center;}
 				.wrap h1{font-size:1.8rem;line-height:1.2}
 				.wrap p{margin:0 0 1vw 0;font-size: 1.5rem;}
 				.cta{font-size:2rem;display:inline-block;margin-top:1vw;padding:1vw 2vw;border-radius:1.5vw;background: rgba(0,0,50,0.5);color: rgba(225,225,255,0.9);text-decoration:none;font-weight:700}
-				.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(5vw,22vw));gap:5vw;margin-top:22vw}
+				.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(2vw,24vw));gap:3vw;margin-top:26vw}
 				.card{background:rgba(225,255,255,0.2);border-radius:2vw;padding:2vw;box-shadow:0 1vw 2vw rgba(0,0,0,0.18)}
-				.card h3{margin:0 0 1vw 0;font-size:1rem}
-				.muted{font-size:0.10rem;color: #fff;}
-				.trust{margin-top:18px;font-size:1rem}
-				footer{margin-top:24px;font-size:1rem;color:#e5e7eb}
-				footer a{color:#e5e7eb;font-size:1rem;}
+				.card h3{margin:0 0 1vw 0;font-size:1.8rem;color: #e0e0e0;}
+				.card p{font-size:1.5rem;color: #e0e0e0;}
+				.muted{font-size:0.10rem;color: #e0e0e0;}
+				.trust{margin-top:3vw;font-size:1rem}
+				footer{margin-top:13vw;font-size:1rem;color:#ddd}
+				footer a{color:#ddd;font-size:1rem;}
 			  </style>
 			<div class="container">
 			  <div class="panel">
 				<header style="text-align:center;margin-bottom:18px">
-				  <h1>Python, Daten & Docker – Projekte in Tagen statt Wochen.</h1>
-				  <p><br>Ich baue CSV‑zu‑API‑Services, starte lokales RAG und mache Python‑Code produktionsreif – schnell, dokumentiert, dockerisiert.</p>
-				  <a class="cta" href="mailto:arno@arnow.solutions">20‑Minuten‑Gespräch vereinbaren</a>
+				  <h1>Maßgeschneiderte Lösungen für Daten, Web & Automatisierung</h1>
+				  <p><br>Softwareentwicklung Fullstack/Backend. Fokus auf Python, Docker, KI, Datenanalyse.<br>
+				Zielorientiert, produktiv, wartbar, Fokus auf Ergebnis und saubere Übergabe.</p>
+				  <a class="cta" href="mailto:arno@arnow.solutions">Unverbindliches Gespräch vereinbaren</a>
 				</header>
 		
 				<section aria-label="Offers">
 				  <div class="grid">
 					<article class="card">
-					  <h3>CSV‑to‑API in 1 Tag</h3>
-					  <p>Upload, Query, Export. FastAPI + Docker. Hand‑over inklusive.</p>
-					  <p class="muted"><strong>Fixpreis ab 590 €</strong></p>
+					  <h3>Data & ML</h3>
+					  <p>Datenaufbereitung, Feature-Engineering, Baselines bis produktionsnahen Modellen.
+						LightGBM, Evaluierung, reproduzierbare Experimente (Docker, Notebooks).</p>
+					  <p class="muted"><strong>auf Wunsch rein lokale Datenverarbeitung<br>(DSGVO) auch bei KI Anwendungen</strong></p>
 					</article>
 					<article class="card">
-					  <h3>RAG‑Starter (lokal)</h3>
-					  <p>PDFs → Antworten mit Quellen. Mistral 7B (gguf), Embeddings, Vektor‑DB – komplett lokal.</p>
-					  <p class="muted"><strong>Fixpreis ab 1.200 €</strong></p>
+					  <h3>Web & APIs</h3>
+					  <p>Fullstack/Backend. Python, Docker, Schlanke Services mit klaren Schnittstellen.
+						FastAPI, Auth, Tests, Dokumentation, saubere CI/CD-Pipelines.</p>
+					  <p class="muted"><strong><br>Backends auch in Go oder Rust</strong></p>
 					</article>
 					<article class="card">
-					  <h3>Python → Produktion</h3>
-					  <p>Vom Notebook/Script zum deploybaren Service: Logging, Config, Docker, CI‑Stub.</p>
-					  <p class="muted"><strong>Fixpreis ab 650 €</strong></p>
+					  <h3>Lokales RAG</h3>
+					  <p>Antworten aus Ihren eigenen Dokumenten, vollständig on-premise.	
+						Ingestion, Vektor-Indizes, Guardrails – DSGVO-konform, auditierbar, erweiterbar.</p>
+					  <p class="muted"><strong><br>ohne Zwang zur Cloud, ihre Daten bleiben bei Ihnen</strong></p>
 					</article>
 				  </div>
 				</section>
 		
 				<section class="trust" aria-label="Trust">
-				  <p><strong>Erfahrung:</strong> ML‑Prognosen (LightGBM) im produktiven Einsatz über mehrere Jahre, RTX 4060 Ti für lokale KI‑Stacks, Udacity Nanodegrees (Data Analysis & Data Science).</p>
+				  <p>Seit Jahren baue ich produktive Systeme zwischen Data/ML, APIs, Automatisierung und lokalem Retrieval-Augmented Generation.
+					Mein Anspruch: solide Architektur, nachvollziehbare Metriken, verlässliche Deployments. Mit und ohne KI.</p>
 				</section>
 		
 				<footer>
-				  <p style="margin-top: 30vw;">© 2025 Arno Waschk · <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a></p>
+				  <p style="margin-top: 38vw;">© 2025 Arno Waschk · <a href="/impressum">Impressum</a> · <a href="/datenschutz">Datenschutz</a></p>
 				</footer>
 			  </div>
 			</div>
