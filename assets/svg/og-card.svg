@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>Arno Waschk – Daten, Web &amp; lokales RAG</title>
+  <desc>OG-Preview-Karte im Stil der Website: blauer Verlauf, Quicksand-Typo, Understatement.</desc>
+
+  <!-- Hintergrund: blauer Verlauf wie auf der Website -->
+  <defs>
+    <!-- 20°-Anmutung via gradientTransform -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0" gradientTransform="rotate(20)">
+      <stop offset="0%" stop-color="#060B36"/>
+      <stop offset="100%"  stop-color="#5A3CF0"/>
+    </linearGradient>
+
+    <!-- Typo-Styles (nutzt lokal installierte Quicksand; fällt auf System-Fonts zurück) -->
+    <style type="text/css"><![CDATA[
+      .wrap { font-family: "Quicksand", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .title { fill: #FFFFFF; font-weight: 700; font-size: 76px; letter-spacing: 0.2px; }
+      .claim { fill: #E9EDF5; font-weight: 600; font-size: 40px; }
+      .sub   { fill: #C7CFDA; font-weight: 400; font-size: 28px; }
+      .meta  { fill: #C7CFDA; font-weight: 500; font-size: 24px; }
+      .pill  { fill: rgba(255,255,255,0.12); stroke: rgba(255,255,255,0.28); stroke-width: 1; }
+    ]]></style>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Inhalt -->
+  <g class="wrap">
+    <!-- Name -->
+    <text x="96" y="188" class="title">Arno Waschk</text>
+
+    <!-- Claim -->
+    <text x="96" y="252" class="claim">Daten, Web &amp; lokales RAG</text>
+
+    <!-- Unterzeile (zweizeilig) -->
+    <text x="96" y="310" class="sub">Unaufgeregte, reproduzierbare Lösungen. On-prem möglich.</text>
+    <text x="96" y="346" class="sub">Klar strukturiert, wartbar, mit sauberer Übergabe.</text>
+
+    <!-- dezente Tech-Zeile (Understatement) -->
+    <text x="96" y="416" class="meta">Python · FastAPI · Docker · LightGBM · Rust/Go</text>
+
+    <!-- Domain unten rechts -->
+    <text class="meta" text-anchor="end" x="1104" y="576">arnow.solutions</text>
+  </g>
+
+  <!-- sichere Randzonen (unsichtbar) -->
+  <!-- <rect x="64" y="64" width="1072" height="502" fill="none" stroke="rgba(255,255,255,0.15)" stroke-dasharray="8 8"/> -->
+</svg>
